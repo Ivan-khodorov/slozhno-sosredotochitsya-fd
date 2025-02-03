@@ -8,10 +8,5 @@
   --title-color: #353430;
   --hover-border-color: rgba(50, 49, 45, 0.4);
   --display-bulb: none;
-}
-.theme-light .header {
-  background-image: var(--background-image-light);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-image: url(../images/cover-image-light.png);
 }

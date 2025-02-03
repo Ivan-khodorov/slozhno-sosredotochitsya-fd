@@ -12,6 +12,7 @@
   }
 
   .page {
+    background-image: url(../images/cover-image-dark.png);
   }
 }
 
@@ -25,16 +26,7 @@
   --title-decor-color: #000028;
   --title-color: #ff0070;
   --display-bulb: flex;
-
+  background-image: url(../images/cover-image-dark.png);
 }
 
 
-.theme-dark .header {
-  background-image: var(--background-image-dark);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.page.theme_dark .header__bulb::after {
-  box-shadow: 0 0 4px 4px rgba(255, 0, 112, 0.4);
-}
