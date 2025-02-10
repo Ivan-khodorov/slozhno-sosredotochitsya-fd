@@ -9,20 +9,19 @@
   --hover-border-color: rgba(50, 49, 45, 0.4);
   --font-family: 'IBM Plex Mono', monospace;
   --font-size: 18px;
-  --line-height: 1.3;
+  --line-height: 23.4px;
   --general-padding: 10px;
   --main-padding-block: 40px;
   --main-gap: 50px;
   --menu-margin: 65px;
   --promo-margin: 55px;
   --display-bulb: none;
-  --background-image-light: url(../images/cover-image-light.png);
-  --background-image-dark: url(../images/cover-image-dark.png);
 }
 @media (width >= 1024px) {
   :root {
     --menu-margin: 0;
     --promo-margin: 114px;
+
   }
 }
 @media (width >= 768px) {
