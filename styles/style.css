@@ -1,3 +1,4 @@
+
 .page {
   color: var(--text-color, #353430);
   font-family: var(--font-family, 'IBM Plex Mono', monospace);
@@ -9,6 +10,7 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+
 }
 
 .header {
@@ -229,6 +231,13 @@
   .footer .decorations{
     font-size: clamp(9.7rem, 0.5625rem + 14.7vw, 10rem);
   }
+  .factors .main__section-content {
+    display: grid;
+    gap: 20px;
+  }
+  .card-text{
+    margin-top: 10px;
+  }
 }
 
 @media (width >= 768px) {
@@ -252,11 +261,17 @@
     .cause .main__section-content,
     .advice .main__section-content {
       grid-column: 2/4;
+
     }
 
     .factors .main__section-content {
       grid-column: span 3;
+      display: grid;
+      gap: 20px;
     }
+  .card-text{
+    margin-top: 10px;
+  }
 
     .advice .main__section-title {
       grid-row: span 2;
@@ -308,12 +323,19 @@
     }
 
     .main__section {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 
     .factors .main__section-content {
-      grid-column: span 1;
-      grid-row: 2/3;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      justify-content: start;
+      align-items: start;
+      grid-row: auto;
+    }
+    .card-text{
+      margin-top: 10px;
     }
 
     .main__section.gallery {
