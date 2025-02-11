@@ -10,7 +10,6 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-
 }
 
 .header {
@@ -43,6 +42,7 @@
   block-size: 9px;
   inline-size: 9px;
 }
+
 .decorated-zone {
   position: relative;
 }
@@ -62,7 +62,6 @@
   right: var(--general-padding, 10px);
   border-left: none;
   border-bottom: none;
-
 }
 
 .decorated-zone::after {
@@ -93,7 +92,6 @@
 
 .header__theme-menu-button:hover {
   outline: 1px solid var(--hover-border-color, rgba(255, 0, 112, 0.4));
-
 }
 
 .header__theme-menu-button:focus {
@@ -132,7 +130,6 @@
 .main__section {
   display: grid;
   gap: 20px;
-
 }
 
 .main__section-title {
@@ -211,44 +208,32 @@
   font-weight: 700;
   text-shadow: 2px 2px 0 var(--accent-color, #ff8dcb);
   color: var(--heading-color, #ffc2e6);
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 9.8125rem);
   line-height: 23.4px;
   text-align: center;
 }
 
 @media (width < 768px) {
-  .page{
- padding: 0;
-    margin: 0;
-  }
+    .page{
+   padding: 0;
+      margin: 0;
+    }
 
-  .gallery {
-    gap: 10px;
-  }
-  .decorations {
-    font-size: clamp(9.7rem, 0.5625rem + 14.7vw, 10rem);
-  }
-  .footer .decorations{
-    font-size: clamp(9.7rem, 0.5625rem + 14.7vw, 10rem);
-  }
-  .factors .main__section-content {
-    display: grid;
-    gap: 20px;
-  }
-  .card-text{
-    margin-top: 10px;
-  }
+    .gallery {
+      gap: 10px;
+    }
+
+    .factors .main__section-content {
+      display: grid;
+      gap: 20px;
+    }
+
+    .card-text{
+      margin-top: 10px;
+    }
 }
 
 @media (width >= 768px) {
-  @media (width < 1024px) {
-    .decorations {
-      font-size: clamp(7.5rem, 0.5625rem + 14.7vw, 10rem);
-    }
-    .footer .decorations{
-      font-size: clamp(7.5rem, 0.5625rem + 14.7vw, 10rem);
-    }
-  }
+
     .header .decorations {
       margin-inline-start: -20px;
 
@@ -261,7 +246,6 @@
     .cause .main__section-content,
     .advice .main__section-content {
       grid-column: 2/4;
-
     }
 
     .factors .main__section-content {
@@ -269,9 +253,10 @@
       display: grid;
       gap: 20px;
     }
-  .card-text{
+
+    .card-text{
     margin-top: 10px;
-  }
+    }
 
     .advice .main__section-title {
       grid-row: span 2;
@@ -302,14 +287,13 @@
 
   @media (width >= 1024px) {
     .decorations {
-      font-size: clamp(7.5rem, 0.5625rem + 14.65vw, 13.08rem);
+      font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     }
-    .footer .decorations{
-      font-size: clamp(7.5rem, 0.5625rem + 14.65vw,13.08rem);
-    }
+
     .footer{
       margin-top: 4px;
     }
+
     .header__theme-menu {
       justify-self: center;
     }
@@ -334,6 +318,7 @@
       align-items: start;
       grid-row: auto;
     }
+
     .card-text{
       margin-top: 10px;
     }
